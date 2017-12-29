@@ -19,49 +19,49 @@ class Regle:
 
     def get_amorce(self):
         """
-
+        Creation d'une methode get pour la variable amorce
         :return:
         """
         return self.amorce
 
     def get_apartirde(self):
         """
-
+        Creation d'une methode get pour la variable apartirde
         :return:
         """
         return self.apartirde
 
     def get_prefixe(self):
         """
-
+        Creation d'une methode get pour la variable prefixe
         :return:
         """
         return self.prefixe
 
     def get_nomfichier(self):
         """
-
+        Creation d'une methode get pour la variable nomfichier
         :return:
         """
         return self.nomfichier
 
     def get_postfixe(self):
         """
-
+        Creation d'une methode get pour la variable postfixe
         :return:
         """
         return self.postfixe
 
     def get_extension(self):
         """
-
+        Creation d'une methode get pour la variable extension
         :return:
         """
         return self.extension
 
     def set_amorce(self, amorce):
         """
-
+        Creation d'une methode set pour la variable amorce
         :param amorce:
         :return:
         """
@@ -70,7 +70,7 @@ class Regle:
 
     def set_apartirde(self, apartirde):
         """
-
+        Creation d'une methode set pour la variable apartirde
         :param apartirde:
         :return:
         """
@@ -79,7 +79,7 @@ class Regle:
 
     def set_prefixe(self, prefixe):
         """
-
+        Creation d'une methode set pour la variable prefixe
         :param prefixe:
         :return:
         """
@@ -88,7 +88,7 @@ class Regle:
 
     def set_nomfichier(self, nomfichier):
         """
-
+        Creation d'une methode set pour la variable nomfichier
         :param nomfichier:
         :return:
         """
@@ -97,7 +97,7 @@ class Regle:
 
     def set_postfixe(self, postfixe):
         """
-
+        Creation d'une methode set pour la variable postfixe
         :param postfixe:
         :return:
         """
@@ -106,7 +106,7 @@ class Regle:
 
     def set_extension(self, extension):
         """
-
+        Creation d'une methode set pour la variable extension
         :param extension:
         :return:
         """
@@ -114,9 +114,10 @@ class Regle:
 
     def __str__(self):
         """
-
+        Donne les valeurs sous la forme :
+        Amorce : Aucune | Apartirde :  | Prefixe : O | Nomfichier : Python | Postfixe : Q | Extension : .txt
         :return:
         """
-        return "{} {} oui  test {} a".format(self.amorce, self.apartirde, self.prefixe)
+        return "Amorce : {} | Apartirde : {} | Prefixe : {] | Nomfichier : {] | Postfixe : {] | Extension : {}".format(self.amorce, self.apartirde, self.prefixe, self.nomfichier, self.postfixe, self.extension)
 
 

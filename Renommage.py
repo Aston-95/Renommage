@@ -1,27 +1,29 @@
 from Action import *
-from os import *
+import os
 
 class Renommage(Action):
 
     def __init__(self, nomdurepertoire, regle):
         """
-
+        Init de la classe Renommage héritant de la classe Action
+        Definition de self.original et self.modifie
 
         """
         Action.__init__(self, nomdurepertoire, regle)
+        self.original=0
+        self.modifie=0
 
     def renommer(self):
         """
-
+        Application du renommage avec le travail fait auparavant dans la méthode "simule"
         exemple :
         os.rename("c:\toto.txt", "c:\titi.txt")
         :return:
         """
-        i=0
-        originaux = os.listdir()
-        for original in originaux:
-            os.rename(Action.nomdurepertoire+original, Action.nomdurepertoire+self.modifie[i])
-            i+=1
+
+        for i in range(0, len(self.original)):
+            os.rename(Renommage.nomdurepertoire+"/" +self.original[i],Renommage.nomdurepertoire+"/" + self.modifie[i])
+
 
     def __str__(self):
         """
